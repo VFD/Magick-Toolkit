@@ -44,6 +44,11 @@ param(
     [string]$OutputFolder = "Normalized" # Output folder (default: "Normalized")
 )
 
+# Clamp DPI between 72 and ????
+if ($DPI -lt 72) { $DPI = 72 }
+#if ($DPI -gt 600) { $DPI = 600 }
+
+
 Write-Host "Normalizing images to ${Dpi} DPI..."
 
 # Create the output folder if it does not exist

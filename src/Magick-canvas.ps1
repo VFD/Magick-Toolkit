@@ -49,6 +49,16 @@ param(
     [string]$Pattern    = "*.png"      # File pattern to process
 )
 
+# Clamp to avoid problems, you can change it if you want
+
+# Clamp CanvasWidth between 100 and 10000
+if ($CanvasWidth -lt 100) { $CanvasWidth = 100 }
+if ($CanvasWidth -gt 10000) { $CanvasWidth = 10000 }
+
+# Clamp CanvasHeight between 100 and 10000
+if ($CanvasHeight -lt 100) { $CanvasHeight = 100 }
+if ($CanvasHeight -gt 10000) { $CanvasHeight = 10000 }
+
 Write-Host "Canvas set to ${CanvasWidth}x${CanvasHeight} pixels."
 
 # Get files matching the pattern
