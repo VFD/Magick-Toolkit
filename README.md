@@ -24,6 +24,11 @@ ___
 %USERPROFILE%\Documents\WindowsPowerShell\Scripts
 ```
 
+- Open System Properties → Environment Variables.
+- Edit the PATH variable and add: "%USERPROFILE%\Documents\WindowsPowerShell\Scripts"
+- Save
+
+
 ### 3. Run the scripts
 - Open **PowerShell ISE** (or the standard PowerShell console).  
 - Review and adjust parameters if necessary (depending on whether you are using ISE or console).  
