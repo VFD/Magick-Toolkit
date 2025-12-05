@@ -9,6 +9,8 @@ The goal is to simplify batch operations such as resizing, DPI normalization, ca
 Working with large sets of images can be time-consuming when adjustments are done manually.  
 These scripts allow you to standardize dimensions, resolution, and naming conventions, making it easier to prepare images for printing, archiving, or PDF export.
 
+This is particularly the case for the project to preserve the heritage of magazines through the [Abandonware Magazines](https://www.abandonware-magazines.org/) initiative.
+
 ___
 ## Installation & Usage
 
