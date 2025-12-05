@@ -35,17 +35,23 @@ ___
 - Navigate to the folder containing your images.  
 - Run the desired script:  
 
-Clic the **play** button in ISE.\
-or\
-Console:
-```powershell
-.\Magick-[].ps1 -parameters
-```
+To execute the script, click the Play button in ISE or run it from the PowerShell console.
 
+### 4. Get-Help
+
+All PowerShell scripts in this project include **Comment-Based Help** (`<# … #>`).  
+You can use the built-in `Get-Help` command to display the documentation directly in the console.
+
+#### Example
+
+```powershell
+Get-Help .\YourScript.ps1 -Full
+```
 ___
 ## Work in progress.
 
 To DO : 
 
-Default parameters and console parameters.
+New Magick script.
+
 ___
