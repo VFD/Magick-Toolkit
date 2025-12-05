@@ -13,7 +13,7 @@ ___
 ## Installation & Usage
 
 ### 1. Install ImageMagick
-- Download and install **ImageMagick** from the official website.  
+- Download and install **ImageMagick** from the official website.  <a href="https://imagemagick.org/script/download.php" target="_blank">ImageMagick Download Page</a>.
 - Extract or install it in any location you prefer.  
 - Make sure the `magick` command is available in your system PATH.
 
