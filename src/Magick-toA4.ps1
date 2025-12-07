@@ -52,11 +52,13 @@ if ($files.Count -eq 0) {
 
         # Resize proportionally to fit within A4, then extend canvas to exact A4
         magick $fullname `
+            -density $DPI `
+            -units PixelsPerInch `
             -resize "${A4Width}x${A4Height}" `
             -background white -gravity center `
             -extent ${A4Width}x${A4Height} `
-            -density $DPI `
             $outFile
+
 
         Write-Host "✅ $basename converted → $outFile"
     }

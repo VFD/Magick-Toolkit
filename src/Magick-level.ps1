@@ -46,8 +46,8 @@
 
 param(
     [string]$Pattern      = "*.png",   # File pattern
-    [int]$Black           = 0,         # Black point (0–255)
-    [int]$White           = 255,       # White point (0–255)
+    [int]$Black           = 80,         # Black point (0–255)
+    [int]$White           = 230,       # White point (0–255)
     [double]$Gamma        = 1.0,       # Gamma correction (0.1-5.0)
     [string]$OutputFolder = "Leveled"  # Output folder
 )
