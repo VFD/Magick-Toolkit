@@ -45,7 +45,7 @@
 # ==============================
 
 param(
-    [int]$StartNumber = 1,        # Starting number (default: 1)
+    [int]$StartNumber = 0,        # Starting number (default: 1)
     [int]$Increment   = 1,        # Increment step between numbers
     [string]$OutputBase = "Page", # Constant base name for output files
     [string]$Pattern     = "*.*", # File pattern to process
@@ -62,7 +62,7 @@ if ($files.Count -eq 0) {
     foreach ($file in $files) {
         $ext = $file.Extension
         # Build new name: BaseName + sequential number (zero-padded) + extension
-        $newName = "{0}_{1:D$Digits}{2}" -f $OutputBase, $counter, $ext
+        $newName = "{0}{1:D$Digits}{2}" -f $OutputBase, $counter, $ext
 
         Write-Host "Renaming: $($file.Name) → $newName"
 
